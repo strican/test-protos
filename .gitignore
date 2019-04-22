@@ -1,0 +1,6 @@
+# Bazel directories
+bazel-bin
+bazel-genfiles
+bazel-out
+bazel-test-protos
+bazel-testlogs

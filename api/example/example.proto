@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package api.service.example; // Requried to generate valid code.
+
+import "api/common/foo.proto";
+import "api/common/bar.proto";
+
+message ExampleRequest {
+    api.common.FooRequest fooRequest = 1;
+    api.common.BarRequest barRequest = 2;
+}
+
+message ExampleResponse {
+    bool success = 1;
+}
+
+service ExampleService {
+    rpc GetExample (ExampleRequest) returns (ExampleResponse);
+}
