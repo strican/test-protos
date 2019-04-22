@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-package api.service.example; // Requried to generate valid code.
+package api.example; // Requried to generate valid code.
 
 import "api/common/foo.proto";
 import "api/common/bar.proto";
 
 message ExampleRequest {
-    api.common.FooRequest fooRequest = 1;
-    api.common.BarRequest barRequest = 2;
+    api.common.foo.FooRequest fooRequest = 1;
+    api.common.bar.BarRequest barRequest = 2;
 }
 
 message ExampleResponse {
